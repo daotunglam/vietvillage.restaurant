@@ -47,6 +47,12 @@ a:hover{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.grid-tpl-col-250{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .grid-tpl-col-300{
     display: grid;
     grid-gap: 2rem;
@@ -160,7 +166,7 @@ section > div{
 
 /****** SECTION 1 - OPENING HOUR ******/
 #section1{
-    background-image: url(media/stockvault-wood-background-with-ivy222197.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/stockvault-wood-background-with-ivy222197.jpg);
     background-position:right;
     background-size: cover;
 }
@@ -196,11 +202,6 @@ section > div{
 #tableReservation img{
     max-height: 300px;
 }
-.grid-tpl-col-250{
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
 #warningAccordion{display: none;}
 @media (max-width:610px) {
     #warning{display: none;}
@@ -218,11 +219,6 @@ section > div{
     background-size: cover;
     background-position: right;
     color: white;
-}
-#section3 > div{
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 #section3 h5{
     white-space: nowrap;
@@ -278,10 +274,12 @@ section > div{
 }
 .discription5 > div{
     margin: 4rem auto;
+    align-items: center;
 }
 .discription5 > div:nth-child(even){
     direction: rtl;
 }
+.discription5 .grid-tpl-col-250 p{max-width:400px;}
 /****** SECTION 5 ******/
 
 
