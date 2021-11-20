@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Village Restaurant</title>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/792b9e6aab.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo-vietvillage.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">KONTAKT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whatGuestsSay">BEWERTUNGEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu-cards">MENÜ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tableReservation">RESERVIERUNG</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- HEADER -->
+
+    <header>
+        <div id="header" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active bg1"></div>
+                <div class="carousel-item bg2"></div>
+                <div class="carousel-item bg3"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header"
+                data-bs-slide="prev">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header"
+                data-bs-slide="next">
+            </button>
+        </div>
+        <a id="onlineBestellung" href="" class="vvrBtn">ONLINE BESTELLUNG</a>
+        <a id="tischReservierung" href="" class="vvrBtn">TISCH RESERVIERUNG</a>
+    </header>
+
+
+
+
+    <!-- MAIN -->
+
+    <main>
+        
+        <section id="section1">
+            <div id="opening-hours">
+
+                <div class="open-daily">
+                    <h2 class="section-title">TÄGLICH GEÖFFNET</h2>
+                    <h5>Montag - Sonntag</h5>
+                </div>
+    
+                <div id="menu-cards" class="grid-tpl-col-200">
+    
+                    <a class="vvrBtn" href="text/Mittagskarte.pdf">
+                        <div>11:30 - 14:30</div>
+                        <div class="mittagskarte">MITTAGSKARTE</div>
+                    </a>
+    
+                    <a class="vvrBtn" href="text/Abendkarte.pdf">
+                        <div>17:30 - 23:00</div>
+                        <div class="abendkarte">ABENDKARTE</div>
+                    </a>
+    
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section2">
+            <div>
+                <h2 class="section-title">TISCH RESERVIEREN</h2>
+                <br>
+                <div id="tableReservation" class="grid-tpl-col-250">
+                    <div class="card position-relative">
+                        <img id="openTable" src="media/openTable.png">
+                    </div>
+                    <div id="warning" class="card">
+                        <div class="card-body">
+                            <h6>Kleine Notiz</h6>
+                            <div class="card-text">
+                                <i>
+                                    Damit unser Online Reservierungs-System besser planen kann, beträgt die maximale
+                                    Aufenthaltsdauer für Online Reservierungen bei einer Gästeanzahl bis zu 3 Personen 2
+                                    Stunden.
+                                    <br>
+                                    Ab 4 Personen beträgt die maximale garantierte Aufenthaltsdauer 2,5 Stunden.
+                                    <br>
+                                    Falls Sie Ihren reservierten Tisch länger benötigen sollten, 
+                                    <br>
+                                    bitten wir Sie mit uns Kontakt aufzunehmen unter:
+                                    <br>
+                                    <br>
+                                    <a class="text-black" href="mailto:info@vietvillage.restaurant"><u>info@vietvillage.restaurant</u></a>
+                                    <br>
+                                    <br>
+                                    Vielen Dank für Ihr Verständnis.
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="warningAccordion" class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Kleine Notiz
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#warningCollapse">
+                                <div class="accordion-body">
+                                    <i>
+                                        Damit unser Online Reservierungs-System besser planen kann, beträgt die maximale
+                                        Aufenthaltsdauer für Online Reservierungen bei einer Gästeanzahl bis zu 3 Personen 2
+                                        Stunden.
+                                        <br>
+                                        Ab 4 Personen beträgt die maximale garantierte Aufenthaltsdauer 2,5 Stunden.
+                                        <br>
+                                        Falls Sie Ihren reservierten Tisch länger benötigen sollten, 
+                                        <br>
+                                        bitten wir Sie mit uns Kontakt aufzunehmen unter:
+                                        <br>
+                                        <br>
+                                        <a class="text-black" href="mailto:info@vietvillage.restaurant"><u>info@vietvillage.restaurant</u></a>
+                                        <br>
+                                        <br>
+                                        Vielen Dank für Ihr Verständnis.
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div>
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <h5>
+                        Vietnamesische Esskultur
+                    </h5>
+                    <h5>
+                        Authentische Küche
+                    </h5>
+                    <h5>
+                        Frische Produkte
+                    </h5>
+                </div>
+                <div class="card-body">
+                    erwarten Sie im Viet Village in München - Pasing. Sehr helle Räume, ruhige grüne Terrasse, urban
+                    eingerichtet mit
+                    asiatischen Elementen.
+                    <br>
+                    <br>
+                    Dafür stehen wir:
+                    <br>
+                    Qualität und frische Produkte die überzeugen, vietnamesiche Gewürzmischungen, traditionelle
+                    Kochkunst, die Sie lieben werden.
+                    <br>
+                    <br>
+                    Wir freuen uns auf Ihren Besuch.
+                </div>
+            </div>
+        </section>
+
+        <section  id="section4">
+            <div>
+                <h5 class="section-title">DAS SAGEN UNSERE GÄSTE</h5>
+                <a id="whatGuestsSay" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="media/cmt1.png" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/cmt2.png" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/cmt3.png" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/cmt4.png" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/cmt5.png" class="d-block">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#whatGuestsSay"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#whatGuestsSay"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </a>
+                <p class="text-center">
+                    Sie finden alle Bewertungen bei unserem Restaurant auf
+                    <br>
+                    <a class="text-black" href="https://www.opentable.de/vietvillage"><b>OpenTable</b> </a>
+                    oder
+                    <a class="text-black" href="https://goo.gl/maps/dfQ1tcfHb7dzzFpEA"><b>GoogleMaps</b> </a>
+                </p>
+            </div>
+        </section>
+        
+        <section id="section5">
+            <div class="discription5">
+                <h2 class="text-center">Unsere Leidenschaft ist "Essen"</h2>
+                <div class="grid-tpl-col-250">
+                    <div>
+                        <img src="media/goicuon.jpg" width="100%">
+                    </div>
+                    <div>
+                        <p>
+                            Wir lieben es zu kochen, aber auch selbst Essen zu gehen und möchten Ihnen unsere Passion näher bringen
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-tpl-col-250">
+                    <div>
+                        <img src="media/giocha.jpg" width="100%">
+                    </div>
+                    <p>
+                        Wir wollen dabei so authentisch wie möglich bleiben die Gerichte so zu bereiten, wie Sie auch in Vietnam serviet bekommen würden. Lediglich die Schärfe haben wir ein wenig reduziert, um es unseren Gästen angenehmer zu machen
+                    </p>
+                </div>
+                <div class="grid-tpl-col-250">
+                    <div>
+                        <img src="media/vit.jpg" width="100%">
+                    </div>
+                    <p>
+                        Die Frische und die Qualität unserer Produkte und Gewürze liegen uns besonders am Herzen. Die Produkte werden auf Punkt gegart, gebraten, gegrillt oder frittiert, damit der Geschmack und die Aromen erhalten bleiben
+                    </p>
+                </div>
+                <div class="grid-tpl-col-250">
+                    <div>
+                        <img src="media/food_1.jpg" width="100%">
+                    </div>
+                    <p>
+                        Der Geschmack ist sehr wichtig, aber das Auge ist auch mit! Daher servieren wir unsere Gerichte immer sehr schön und individuell angerichtet
+                    </p>
+                </div>
+                
+                <p class="text-center">
+                    <b>
+                        Wir wünschen Ihnen einen guten Appetit
+                        <br>
+                        und freuen uns auf Ihren nächsten Besuch!
+                    </b>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer1">
+
+        <p>
+            <img src="media/logo-vietvillage.svg">
+        </p>
+
+        <div class="grid-tpl-col-200">
+
+            <div id="contact">
+                <p>
+                    <a href="mailto:info@vietvillage.restaurant">
+                        <i class="fas fa-envelope"></i>
+                        info@vietvillage.restaurant
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+498997317297">
+                        <i class="fas fa-phone-square-alt"></i>
+                        089 9731 7297
+                    </a>
+                </p>
+                <p>
+                    <a href="">Online Tisch Reservierung</a>
+                </p>
+            </div>
+
+            <div class="grid-tpl-col-200">
+
+                <div>
+                    <h6 class="font-georgia">ÖFFNUNGSZEITEN</h6>
+                    <p>Montag - Sonntag</p>
+                    <p>11:30 - 14:30</p>
+                    <p>17:30 - 23:00</p>
+                </div>
+        
+                <div id="restaurantGroup">
+                    <h6 class="font-georgia">RESTAURANT GROUP</h6>
+                    <div class="d-flex justify-content-evenly align-items-center">
+                        <a href="https://www.tempel.asia/">
+                            <img src="media/logo-tempel.png">
+                        </a>
+                        <a href="https://www.bamihouse.de/">
+                            <img src="media/logo-bamihouse.svg">
+                        </a>
+                        <a href="https://www.hasia.de/#willkommen">
+                            <img src="media/logo-hasia-black.svg">
+                        </a>
+                        <a href="#">
+                            <img src="media/logo-vietvillage.svg">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+    
+
+        </div>
+
+    </footer>
+
+    <footer class="footer2">
+        <div class="googlemaps">
+            <h4 class="section-title">BESUCHEN SIE UNS IN</h4>
+            <p>
+                <a href="https://goo.gl/maps/CMQzrjDHFFdSCT6BA">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Bodenstedtstraße 58. 81241 München
+                </a>
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.183944188246!2d11.459030015528201!3d48.14525887922403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd80815c91a99%3A0x18d5724dd7b297e6!2sViet%20Village%20Restaurant!5e0!3m2!1sde!2sde!4v1637225301381!5m2!1sde!2sde"
+                loading="lazy"></iframe>
+        </div>
+        <p class="mt-3">
+            <a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a>
+        </p>
+    </footer>
+</body>
+
+</html>
