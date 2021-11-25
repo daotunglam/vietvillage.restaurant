@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- JS -->
     <script src="script.js"></script>
+
+    <!-- gloriafood -->
+    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
 </head>
 
 <body>
@@ -45,9 +48,6 @@
                         <a class="nav-link" href="#whatGuestsSay">BEWERTUNGEN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GALLERIE</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#menu-cards">MENÜ</a>
                     </li>
                     <li class="nav-item">
@@ -68,7 +68,6 @@
             <div class="carousel-inner">
                 <div class="carousel-item active bg1"></div>
                 <div class="carousel-item bg2"></div>
-                <div class="carousel-item bg3"></div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header"
                 data-bs-slide="prev">
@@ -77,8 +76,8 @@
                 data-bs-slide="next">
             </button>
         </div>
-        <a id="onlineBestellung" href="" class="vvrBtn">ONLINE BESTELLUNG</a>
-        <a id="tischReservierung" href="" class="vvrBtn">TISCH RESERVIERUNG</a>
+        <span class="tischReservierung vvrBtn" data-glf-cuid="de3f84c5-b5d7-48aa-a7f5-ab2c81db5232" data-glf-ruid="4647646e-4415-4eda-85ae-c36c5bbb08ba" data-glf-reservation="true" >BEI UNS RESERVIEREN</span>
+        <span class="onlineBestellung vvrBtn" data-glf-cuid="de3f84c5-b5d7-48aa-a7f5-ab2c81db5232" data-glf-ruid="4647646e-4415-4eda-85ae-c36c5bbb08ba" >ZUM ABHOLEN BESTELLEN</span>
     </header>
 
 
@@ -99,13 +98,13 @@
                 <div id="menu-cards" class="grid-tpl-col-200">
     
                     <a class="vvrBtn" href="text/Mittagskarte.pdf">
-                        <div>11:30 - 14:30</div>
                         <div class="mittagskarte">MITTAGSKARTE</div>
+                        <div>11:30 - 14:30</div>
                     </a>
     
                     <a class="vvrBtn" href="text/Abendkarte.pdf">
-                        <div>17:30 - 23:00</div>
                         <div class="abendkarte">ABENDKARTE</div>
+                        <div>17:30 - 23:00</div>
                     </a>
     
                 </div>
@@ -115,7 +114,7 @@
 
         <section id="section2">
             <div>
-                <h2 class="section-title">TISCH RESERVIEREN</h2>
+                <h2 class="section-title">MIT OPENTABLE RESERVIEREN</h2>
                 <br>
                 <div id="tableReservation" class="grid-tpl-col-250">
                     <div class="card position-relative">
@@ -182,7 +181,7 @@
 
         <section id="section3">
             <div class="grid-tpl-col-250">
-                <div class="card-body d-flex flex-column justify-content-around">
+                <div class="card-body">
                     <h5>
                         Vietnamesische Esskultur
                     </h5>

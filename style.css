@@ -51,16 +51,16 @@ a:hover{
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1024px;
+    margin-left:auto; margin-right:auto;
 }
 
 .grid-tpl-col-300{
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-@media (max-width:480px) {
-    *{text-align: center;}
+    max-width: 1024px;
+    margin-left:auto; margin-right:auto;
 }
 
 .vvrBtn{
@@ -76,6 +76,12 @@ a:hover{
     text-decoration: none;
     color: white;
 }
+
+@media (max-width:550px) {
+    * { text-align: center; }
+}
+
+
 
 
 
@@ -109,30 +115,35 @@ header{
     background-repeat: no-repeat;
 }
 .bg1{
-    background-image: url(media/goc-ban-an-pressed.jpg);
+    background-image: url(media/dia-ca-nuong.jpg);
 }
 .bg2{
     background-image: url(media/ban-an-lon-screen.jpg);
-}
-.bg3{
-    background-image: url(media/dia-ca-nuong.jpg);
 }
 
 header .vvrBtn{
     color: var(--vvrColor);
     padding: 1rem 2rem;
+    min-width: fit-content;
 }
-#onlineBestellung{
+.onlineBestellung{
     position: absolute;
     bottom: 15vh;
     left: 15vw;
     white-space: nowrap;
 }
-#tischReservierung{
+.tischReservierung{
     position: absolute;
     top: 15vh;
     right: 15vw;
     white-space: nowrap;
+}
+@media (max-width:550px) {
+    
+    .onlineBestellung, .tischReservierung{ 
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
 }
 /****** HEADER ******/
 
@@ -146,9 +157,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4rem 1rem;
 }
 section > div{
-    margin: 1rem;
+    /* margin: 4rem 1rem; */
+    width: 100%;
+    min-height: 60vh;
 }
 .section-title{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -166,7 +180,8 @@ section > div{
 
 /****** SECTION 1 - OPENING HOUR ******/
 #section1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/stockvault-wood-background-with-ivy222197.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/goc-ban-an-pressed.jpg);
+    background-attachment: fixed;
     background-position:right;
     background-size: cover;
 }
@@ -176,11 +191,7 @@ section > div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 1rem;
-    min-height: 60vh;
     justify-content: space-evenly;
-    align-items: center;
 }
 .open-daily{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -203,7 +214,7 @@ section > div{
     max-height: 300px;
 }
 #warningAccordion{display: none;}
-@media (max-width:610px) {
+@media (max-width:550px) {
     #warning{display: none;}
     #warningAccordion {display: block;}
 }
@@ -213,7 +224,7 @@ section > div{
 
 /****** SECTION 3 ******/
 #section3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(media/bat-vit-erdnuss.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(media/bat-vit-erdnuss.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,6 +234,11 @@ section > div{
 #section3 h5{
     white-space: nowrap;
 }
+#section3 .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 /****** SECTION 3 ******/
 
 
@@ -230,12 +246,10 @@ section > div{
 
 /****** SECTION 4 - WHAT GUESTS SAY ******/
 #section4 > div{
-    margin: 1rem;
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
 }
 #whatGuestsSay .carousel-item{
     min-height: 140px;
@@ -265,7 +279,7 @@ section > div{
 
 /****** SECTION 5 ******/
 #section5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/stockvault-wood-background-with-ivy222197.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(media/bat-vit-erdnuss.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +293,15 @@ section > div{
 .discription5 > div:nth-child(even){
     direction: rtl;
 }
-.discription5 .grid-tpl-col-250 p{max-width:400px;}
+/* .discription5 .grid-tpl-col-250 p{
+    max-width:400px;
+} */
+@media (min-width:769px) {
+    .discription5 .grid-tpl-col-250 p{
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+}
 /****** SECTION 5 ******/
 
 
