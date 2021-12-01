@@ -86,24 +86,6 @@ a:hover{
 
 
 
-/****** NAVBAR ******/
-.navbar{
-    background-color: rgba(0,0,0, 0.7);
-}
-.nav-link{
-    /* font-family: 'Roboto Slab', serif; */
-    /* font-family: 'Antic Didone', serif; */
-    /* font-family: 'DM Serif Display', serif; */
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgba(239, 178, 55, 1) !important;
-}
-/****** NAVBAR ******/
-
-
-
-
-
-
 /****** HEADER ******/
 header{
     position: relative;
@@ -131,18 +113,23 @@ header .vvrBtn{
     bottom: 15vh;
     left: 15vw;
     white-space: nowrap;
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .tischReservierung{
     position: absolute;
     top: 15vh;
     right: 15vw;
     white-space: nowrap;
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 @media (max-width:550px) {
     
     .onlineBestellung, .tischReservierung{ 
         transform: translate(-50%, 0);
         left: 50%;
+        font-size: 1rem;
     }
 }
 /****** HEADER ******/
@@ -169,9 +156,9 @@ section > div{
     text-align: center;
     white-space: nowrap;
 }
-@media (max-width:375px) {
+@media screen and (max-width:550px) {
     .section-title{
-        white-space: inherit;
+        white-space:normal;
     }
 }
 /****** MAIN ******/
@@ -210,9 +197,6 @@ section > div{
 
 
 /****** SECTION 2 - TABLE RESERVATION ******/
-#tableReservation img{
-    max-height: 300px;
-}
 #warningAccordion{display: none;}
 @media (max-width:550px) {
     #warning{display: none;}
@@ -224,7 +208,7 @@ section > div{
 
 /****** SECTION 3 ******/
 #section3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(media/bat-vit-erdnuss.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(media/bat-vit-erdnuss.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +263,7 @@ section > div{
 
 /****** SECTION 5 ******/
 #section5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(media/bat-vit-erdnuss.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(media/bat-vit-erdnuss.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,26 +292,61 @@ section > div{
 
 
 
-/****** FOOTER ******/
-footer{
-    padding: 2rem;
-    background-color: rgba(0,0,0,0.7);
+
+/****** IMPRESSUM ******/
+
+/****** IMPRESSUM ******/
+
+
+
+
+
+/****** POLICY ******/
+#policy a{
+    color: black;
+}
+#policyHeader > div{
+    background-image: url(media/goc-ban-an-pressed.jpg);height: 100vh;background-attachment: fixed;
+    background-position:right;
+    background-size: cover;
     color: white;
 }
-.font-georgia{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+@media screen and (min-width: 1024px){
+    #policyHeader .space{
+        display: block;
+    }
+    #policyHeader .nospace{
+        display: none;
+    }
+    #policyHeader .breakword {
+        display: none;
+    }
 }
-.footer2 *{
-    text-align: center;
+@media screen and (max-width: 1024px) and (min-width: 550px){
+    #policyHeader .space{
+        display: none;
+    }
+    #policyHeader .nospace{
+        display: block;
+    }
+    #policyHeader .breakword {
+        display: none;
+    }
 }
-.googlemaps{
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 550px){
+    #policyHeader .space{
+        display: none;
+    }
+    #policyHeader .nospace{
+        display: none;
+    }
+    #policyHeader .breakword {
+        display: block;
+    }
 }
-.googlemaps iframe{
-    height: 50vh;
+@media screen and (max-width: 550px){
+    #policy a{
+        word-break: break-all;
+    }
 }
-#restaurantGroup img{
-    width: 3rem;
-}
-/****** FOOTER ******/
+/****** POLICY ******/

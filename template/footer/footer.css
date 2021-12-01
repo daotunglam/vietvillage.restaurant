@@ -1,0 +1,36 @@
+
+
+
+
+
+/****** FOOTER ******/
+footer{
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+.font-georgia{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.footer2 *{
+    text-align: center;
+}
+.googlemaps{
+    display: flex;
+    flex-direction: column;
+}
+.googlemaps iframe{
+    height: 50vh;
+}
+#restaurantGroup img{
+    width: 100%;
+}
+
+.grid-tpl-col-100{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+/****** FOOTER ******/
